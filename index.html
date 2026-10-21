@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="AxonOS — a connectome-inspired desktop environment for the web."
+  />
+
+  <title>AxonOS | Neural Desktop</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="desktop" id="desktop">
+
+    <header class="system-bar">
+      <div class="system-brand">
+        
+<span class="brand-symbol" aria-label="AxonOS logo">
+  <svg
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <g
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M24 24 L14 15 L7 15" />
+      <path d="M14 15 L14 7" />
+      <path d="M24 24 L34 15 L41 15" />
+      <path d="M34 15 L34 7" />
+      <path d="M24 24 L14 33 L7 33" />
+      <path d="M14 33 L14 41" />
+      <path d="M24 24 L34 33 L41 33" />
+      <path d="M34 33 L34 41" />
+    </g>
+    <circle cx="24" cy="24" r="7" fill="#a994ff" />
+    <circle cx="24" cy="24" r="3" fill="#70eaff" />
+    <g fill="#70eaff">
+      <circle cx="7" cy="15" r="2" />
+      <circle cx="14" cy="7" r="2" />
+      <circle cx="41" cy="15" r="2" />
+      <circle cx="34" cy="7" r="2" />
+      <circle cx="7" cy="33" r="2" />
+      <circle cx="14" cy="41" r="2" />
+      <circle cx="41" cy="33" r="2" />
+      <circle cx="34" cy="41" r="2" />
+    </g>
+  </svg>
+</span>
+        <span>AxonOS</span>
+      </div>
+
+      <div class="system-status">
+        <span class="status-indicator"></span>
+        <span>NEURAL SYSTEM ONLINE</span>
+      </div>
+
+      <time id="system-clock">00:00</time>
+    </header>
+
+    <div class="connectome" id="connectome" aria-hidden="true">
+      <canvas id="network-canvas"></canvas>
+    </div>
+
+    <section class="desktop-heading">
+      <p class="eyebrow">PERSONAL COMPUTING ENVIRONMENT</p>
+      <h1>Think beyond the interface<span>.</span></h1>
+      <p class="desktop-subtitle">
+        Your digital workspace, connected.
+      </p>
+    </section>
+
+    <nav class="app-network" aria-label="Applications">
+
+      <button
+        class="app-node node-neurolab"
+        data-app="neurolab"
+        aria-label="Open NeuroLab"
+        style="--x: 24%; --y: 45%;"
+      >
+        <span class="app-orb">
+          <span class="app-icon">Ψ</span>
+        </span>
+        <span class="app-label">NeuroLab</span>
+        <span class="app-description">Neural simulation</span>
+      </button>
+
+      <button
+        class="app-node node-notes"
+        data-app="notes"
+        aria-label="Open Notes"
+        style="--x: 47%; --y: 46%;"
+      >
+        <span class="app-orb">
+          <span class="app-icon">✎</span>
+        </span>
+        <span class="app-label">Notes</span>
+        <span class="app-description">Ideas and thoughts</span>
+      </button>
+
+      <button
+        class="app-node node-terminal"
+        data-app="terminal"
+        aria-label="Open Terminal"
+        style="--x: 72%; --y: 47%;"
+      >
+        <span class="app-orb">
+          <span class="app-icon">&gt;_</span>
+        </span>
+        <span class="app-label">Terminal</span>
+        <span class="app-description">Command interface</span>
+      </button>
+
+      <button
+        class="app-node node-files"
+        data-app="files"
+        aria-label="Open Files"
+        style="--x: 38%; --y: 65%;"
+      >
+        <span class="app-orb">
+          <span class="app-icon">▰</span>
+        </span>
+        <span class="app-label">Files</span>
+        <span class="app-description">Explore your workspace</span>
+      </button>
+
+      <button
+        class="app-node node-settings"
+        data-app="settings"
+        aria-label="Open Settings"
+        style="--x: 65%; --y: 68%;"
+      >
+        <span class="app-orb">
+          <span class="app-icon">⚙</span>
+        </span>
+        <span class="app-label">Settings</span>
+        <span class="app-description">Configure AxonOS</span>
+      </button>
+
+    </nav>
+
+    <footer class="dock-container">
+      <nav class="dock" aria-label="Application dock">
+
+        <button class="dock-item" data-app="neurolab" aria-label="NeuroLab">
+          <span>Ψ</span>
+        </button>
+
+        <button class="dock-item" data-app="notes" aria-label="Notes">
+          <span>✎</span>
+        </button>
+
+        <button class="dock-item" data-app="terminal" aria-label="Terminal">
+          <span>&gt;_</span>
+        </button>
+
+        <span class="dock-divider"></span>
+
+        <button class="dock-item" data-app="files" aria-label="Files">
+          <span>▰</span>
+        </button>
+
+        <button class="dock-item" data-app="settings" aria-label="Settings">
+          <span>⚙</span>
+        </button>
+
+      </nav>
+
+      <p class="dock-caption">CONNECTED THINKING</p>
+    </footer>
+
+  </main>
+</body>
+</html>
